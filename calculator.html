@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="icon" href="calculator.png" type="image/x-icon">
+        <title>Online Calculator</title>
+    </head>
+    <body>
+        <h1>
+            My First Calculator
+        </h1>
+        <h2>
+            By-GPM
+        </h2>
+    </body>
+
+
+    <form name="from1" class="cal1" action="calculator.html" method="POST">
+ <input type="text" name="answer" id="display">
+ <br>
+    </br>
+ <input type="button" class="btndesign" value="C" onclick="from1.answer.value=from1.answer.value.substring(0,from1.answer.value.length*1-1)">  
+ <input type="button" class="btndesign" value="CE" onclick="from1.answer.value=from1.answer.value.substring(0,from1.answer.value.length*0)"> 
+ <input type="button" class="btndesign" value="00" onclick="from1.answer.value+='00'">  
+ <input type="button" class="operatordesign" value="/" onclick="from1.answer.value+='/'">
+ <br>
+</br>
+ <input type="button" class="btndesign" value="7" onclick="from1.answer.value+='7'">  
+ <input type="button" class="btndesign" value="8" onclick="from1.answer.value+='8'">  
+ <input type="button" class="btndesign" value="9" onclick="from1.answer.value+='9'">  
+ <input type="button" class="operatordesign" value="*" onclick="from1.answer.value+='*'"> 
+ <br>
+</br> 
+ <input type="button" class="btndesign" value="4" onclick="from1.answer.value+='4'">  
+ <input type="button" class="btndesign" value="5" onclick="from1.answer.value+='5'">  
+ <input type="button" class="btndesign" value="6" onclick="from1.answer.value+='6'">  
+ <input type="button" class="operatordesign" value="-" onclick="from1.answer.value+='-'">
+ <br>
+</br>  
+ <input type="button" class="btndesign" value="1" onclick="from1.answer.value+='1'">  
+ <input type="button" class="btndesign" value="2" onclick="from1.answer.value+='2'">  
+ <input type="button" class="btndesign" value="3" onclick="from1.answer.value+='3'">  
+ <input type="button" class="operatordesign" value="+" onclick="from1.answer.value+='+'"> 
+ <br>
+</br> 
+ <input type="button" class="btndesign" value="0" onclick="from1.answer.value+='0'">  
+ <input type="button" class="btndesign" value="." onclick="from1.answer.value+='.'">  
+ <input type="button" id="operator1design" value="=" onclick="from1.answer.value=eval(from1.answer.value)">   
+
+
+</form>
+</html>
